@@ -22,6 +22,8 @@ X,y = df.iloc[:, :-1], df.iloc[:, -1]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=0.3)
 
+
+
 dt_clf = DecisionTreeRegressor()
 dt_clf = dt_clf.fit(X_train, y_train)
 
